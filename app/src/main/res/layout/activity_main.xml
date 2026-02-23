@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="#121212">
+    <Button
+        android:id="@+id/btn_select_apps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Allowed Apps"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+    android:id="@+id/tv_timer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="00:00"
+    android:textSize="80sp"
+    android:textColor="#FFFFFF"
+    android:fontFamily="sans-serif-light"
+    android:layout_marginBottom="40dp"/>
+    <Button
+        android:id="@+id/btn_view_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View History"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tv_duration_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Focus Duration: 25 min"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="120"
+        android:progress="25"
+        android:progressTint="#4CAF50"
+        android:thumbTint="#4CAF50"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btn_start_focus"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Start 1 Minute Focus"
+        android:textSize="20sp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btn_emergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emergency Stop"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#F44336"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_allowed_apps"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

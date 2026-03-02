@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements FocusAppsAdapter.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // This is the FEATURE branch comment
         setContentView(R.layout.activity_main);
 
         // 1. Connect XML elements
